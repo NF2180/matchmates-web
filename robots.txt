@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nf2180.github.io/matchmates-web/sitemap.xml
