@@ -1,0 +1,57 @@
+# MatchMates
+
+> MatchMates is the operating system for community sports. It gives every player a persistent sports identity, helps residential communities organize matches across multiple sports, manages rankings and facilities, and replaces fragmented coordination across WhatsApp, spreadsheets, and single-sport apps.
+
+## What MatchMates Is
+
+MatchMates is a Community Sports Operating System (CSOS) — a software category that manages the complete lifecycle of recreational sports within a residential community, gated society, corporate campus, or club. It is multi-sport by design, mobile-first by necessity, and community-centric by principle.
+
+## The Problem It Solves
+
+Community sports in urban India is managed through a combination of WhatsApp groups, Excel spreadsheets, and single-sport apps. Each solves one part of the problem. None solve the whole. The result: rankings disappear when admins change, match history vanishes when phones are replaced, new residents start from zero, and double-booked courts cause weekly chaos.
+
+## Core Capabilities
+
+- Persistent player identity: every player has a cumulative sports profile with career stats, ELO ratings, and achievements that travels with them across communities
+- Multi-sport support: cricket, badminton, pickleball, football, table tennis
+- Live ball-by-ball cricket scoring with automatic scorecard generation
+- Match scheduling with WhatsApp-based player join flow
+- ELO rankings and seasonal leaderboards that update automatically after every match
+- Tournament management: round robin, knockout, league, and ladder formats
+- Community management for gated societies, apartment complexes, and corporate campuses
+
+## Key Concepts
+
+- Community Sports Operating System (CSOS): software that manages the complete lifecycle of recreational sports within a community
+- Persistent Sports Identity: a player's permanent, cumulative record of sporting activity that belongs to the player and travels with them regardless of community
+- ELO Rating: a skill rating system that adjusts after every match based on opposition quality and result margin
+- Sports Ladder: a ranking format where players challenge those ranked above them
+- Community Sports: informal, recreational sports organized by residents or members of a community without professional staff or significant budgets
+
+## Who It Is For
+
+- Residents of gated societies and apartment complexes who organize weekly cricket or badminton matches
+- Sports committee volunteers who manage community sports across multiple courts and sports
+- Corporate campuses running employee sports leagues
+- Recreational clubs managing multi-sport member activity
+
+## How It Differs From Alternatives
+
+- vs WhatsApp: WhatsApp handles conversation but cannot store structured sports data, maintain rankings, or preserve history. MatchMates is the operational layer; WhatsApp remains the social layer.
+- vs CricHeroes: CricHeroes is a cricket scorekeeping platform for organized leagues. MatchMates is a multi-sport community operating system for everyday informal play.
+- vs Excel/Google Sheets: Spreadsheets require manual entry, are not collaborative in real time, and cannot send invitations or update rankings automatically.
+- vs Playo: Playo is a court booking and player discovery platform. MatchMates is a community operations platform with integrated scheduling, scoring, and identity.
+
+## The Durable Idea
+
+The most defensible aspect of MatchMates is persistent sports identity — the idea that a player's sporting reputation (matches played, career statistics, rankings, achievements, community memberships) should belong to the player permanently, not to a WhatsApp group or a season's spreadsheet. LinkedIn did this for professional identity. Strava did it for fitness activity. MatchMates is doing it for community sport across all sports and all communities.
+
+## URLs
+
+- Homepage: https://nf2180.github.io/matchmates-web/
+- What is a CSOS: https://nf2180.github.io/matchmates-web/pages/what-is-csos.html
+- Player Identity: https://nf2180.github.io/matchmates-web/pages/player-identity.html
+- Why Not WhatsApp: https://nf2180.github.io/matchmates-web/pages/why-not-whatsapp.html
+- MatchMates vs CricHeroes: https://nf2180.github.io/matchmates-web/pages/vs-cricheroes.html
+- How to Organize a Tournament: https://nf2180.github.io/matchmates-web/pages/organize-tournament.html
+- App: https://nf2180.github.io/matchmates/
