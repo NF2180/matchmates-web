@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MatchMates — The Operating System for Community Sports</title>
-  <meta name="description" content="MatchMates is the cricket scoring app built for apartment tournaments, weekend cricket, and local Maidan cricket in Bangalore and across India. Score matches, track personal milestones, and build unlimited career history — all free.">
-  <meta name="keywords" content="cricket scoring app, cricket scoring app for apartment tournaments, hassle free cricket scoring, cricket scoring for weekend cricket, cricket scoring with unlimited personal history, cricket scoring with personal milestones, cricket scoring for apartment complexes in Bangalore, cricket scoring for Maidan cricket, community sports app, gated society sports, apartment cricket tournament">
-  <meta property="og:title" content="MatchMates — Community Sports Operating System">
-  <meta property="og:description" content="Organize matches, manage facilities, build player identities, and run rankings across multiple sports — all in one place.">
-  <meta property="og:type" content="website">
+  <title>Cricket Scoring App — Live Scores, Personal History & Rankings | MatchMates</title>
+  <meta name="description" content="MatchMates is the cricket scoring app for apartment tournaments, weekend cricket, and Maidan cricket. Live ball-by-ball scoring, personal milestones, career history, and AI-balanced teams. Free to use.">
+  <meta name="keywords" content="cricket scoring app, cricket scoring app for apartment tournaments, hassle free cricket scoring for local cricket, cricket scoring for weekend cricket, cricket scoring with unlimited personal history, cricket scoring with personal milestones, cricket scoring for apartment complexes in Bangalore, cricket scoring for Maidan cricket">
   <link rel="canonical" href="https://nf2180.github.io/matchmates-web/">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB123FQ53Y"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,391 +15,322 @@
     gtag("js", new Date());
     gtag("config", "G-YB123FQ53Y");
   </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"MatchMates Cricket Scoring App","applicationCategory":"SportsApplication","description":"Cricket scoring app for apartment tournaments, weekend cricket, and Maidan cricket. Live ball-by-ball scoring, personal milestones, unlimited career history, AI-balanced teams.","operatingSystem":"Web, iOS, Android","url":"https://nf2180.github.io/matchmates/","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best cricket scoring app for apartment tournaments?","acceptedAnswer":{"@type":"Answer","text":"MatchMates is built for apartment tournaments and weekend cricket. Players join via WhatsApp link. Live scorecards viewable in any browser without an app download. Every match builds personal history, milestones, and ELO rankings automatically."}},{"@type":"Question","name":"Is MatchMates free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Free for live scoring, personal history, rankings, and tournament management."}},{"@type":"Question","name":"Do players need to download the app?","acceptedAnswer":{"@type":"Answer","text":"Live scorecards are viewable in any browser without downloading. Players tracking personal history and rankings need to download the app."}},{"@type":"Question","name":"How is MatchMates different from CricHeroes?","acceptedAnswer":{"@type":"Answer","text":"CricHeroes requires manual player entry by phone number and needs the app installed. MatchMates players join via WhatsApp link instantly. Live scorecards are viewable without any download on MatchMates."}}]}
+  </script>
+  <style>
+    .steps-section { background: var(--forest); padding: 100px 5vw; }
 
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "MatchMates",
-  "applicationCategory": "SportsApplication",
-  "applicationSubCategory": "Community Sports Operating System",
-  "description": "MatchMates is a Community Sports Operating System for residential communities, gated societies, clubs, and corporate campuses. It manages player identity, match scheduling, live scoring, rankings, facilities, and community engagement across cricket, badminton, pickleball, football, and table tennis.",
-  "operatingSystem": "Web, iOS, Android",
-  "url": "https://nf2180.github.io/matchmates-web/",
-  "offers": {
-    "@type": "Offer",
-    "price": "0"
-  },
-  "featureList": [
-    "Persistent player sports identity",
-    "Ball-by-ball cricket scoring",
-    "ELO rankings and leaderboards",
-    "WhatsApp-based player join flow",
-    "Multi-sport support",
-    "Tournament management",
-    "Court and facility booking",
-    "Career statistics"
-  ],
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Residents of gated communities, apartment complexes, corporate campuses, recreational clubs"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "MatchMates",
-  "url": "https://nf2180.github.io/matchmates-web/",
-  "description": "Builder of the Community Sports Operating System for residential communities in India",
-  "knowsAbout": [
-    "Community Sports Operating System",
-    "Persistent Sports Identity",
-    "Cricket scoring",
-    "Badminton ranking",
-    "Apartment sports management",
-    "Gated society sports"
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Community Sports Operating System?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Community Sports Operating System (CSOS) is software that manages the complete lifecycle of recreational sports within a community \u2014 providing player identities, scheduling, facilities management, rankings, communications, statistics, and engagement across multiple sports simultaneously."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is MatchMates different from CricHeroes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CricHeroes is a cricket scorekeeping platform built for organized leagues and clubs. MatchMates is a multi-sport community operating system built for the complete operational life of a residential community \u2014 covering cricket, badminton, pickleball, football, and table tennis, plus scheduling, facilities, player discovery, and persistent identity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do WhatsApp groups fail for community sports?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "WhatsApp groups fail for community sports because they cannot store structured data, maintain rankings, preserve match history, handle court booking, or provide player discovery. Confirmations get buried in messages, history disappears when admins change, and there is no institutional memory. MatchMates provides the structured operational layer that WhatsApp cannot."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is persistent sports identity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Persistent sports identity is a player's permanent, cumulative record of sporting activity \u2014 matches, statistics, rankings, achievements, and community memberships \u2014 that belongs to the player and travels with them regardless of where they live or which community they join. MatchMates builds persistent sports identity across all sports and communities."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which sports does MatchMates support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MatchMates supports cricket, badminton, pickleball, football, and table tennis, with live ball-by-ball scoring for cricket and ranking systems for all sports."
-      }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+      align-items: start;
     }
-  ]
-}
-  </script>
+
+    .step-card { display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+    .step-phone {
+      position: relative;
+      width: 160px;
+      margin-bottom: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .step-phone img {
+      width: 100%;
+      border-radius: 20px;
+      border: 2px solid rgba(168,230,61,0.25);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      display: block;
+    }
+
+    .step-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--lime);
+      color: var(--night);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      padding: 0.15rem 0.65rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      z-index: 2;
+    }
+
+    .step-annotation {
+      position: absolute;
+      background: var(--lime);
+      color: var(--night);
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .step-annotation::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid transparent;
+      border-top-color: var(--lime);
+    }
+
+    .ann-1 { bottom: 36%; }
+    .ann-2 { bottom: 30%; }
+    .ann-3 { top: 24%; }
+    .ann-4 { bottom: 20%; }
+    .ann-5 { top: 38%; }
+
+    .step-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-bottom: 0.3rem;
+    }
+
+    .step-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.35rem;
+      line-height: 1.1;
+    }
+
+    .step-desc { font-size: 0.8rem; color: var(--slate); line-height: 1.6; max-width: 20ch; }
+
+    .tagline-band { background: var(--lime); padding: 2.5rem 5vw; text-align: center; }
+    .tagline-band h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.8rem,4vw,3rem); font-weight: 900; color: var(--night); line-height: 1.1; margin-bottom: 0.5rem; }
+    .tagline-band p { font-size: 1rem; color: rgba(10,31,20,0.72); margin-bottom: 1.5rem; }
+    .btn-dark { background: var(--night); color: var(--lime); font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.9rem; padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; display: inline-block; transition: all 0.2s; }
+    .btn-dark:hover { background: var(--forest); }
+
+    @media(max-width:700px){
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .step-phone { width: 130px; }
+    }
+  </style>
 </head>
 <body>
 
-<nav aria-label="Main navigation">
+<nav>
   <a href="index.html" class="nav-logo">Match<span>Mates</span></a>
   <ul class="nav-links">
-    <li><a href="pages/what-is-csos.html">What is a CSOS?</a></li>
-    <li><a href="pages/player-identity.html">Player Identity</a></li>
-    <li><a href="pages/why-not-whatsapp.html">Why Not WhatsApp?</a></li>
-    <li><a href="pages/vs-cricheroes.html">vs CricHeroes</a></li>
-    <li><a href="pages/organize-tournament.html">Organize</a></li>
-    <li><a href="pages/cricket-scoring-app.html">Cricket Scoring</a></li>
+    <li><a href="what-is-csos.html">What is a CSOS?</a></li>
+    <li><a href="player-identity.html">Player Identity</a></li>
+    <li><a href="why-not-whatsapp.html">Why Not WhatsApp?</a></li>
+    <li><a href="vs-cricheroes.html">vs CricHeroes</a></li>
+    <li><a href="organize-tournament.html">Organize</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="https://nf2180.github.io/matchmates" class="nav-cta" target="_blank">Open App →</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
-<section class="hero" aria-label="Hero">
-  <div class="pitch-grid" aria-hidden="true"></div>
-  <div class="pitch-circle" aria-hidden="true"></div>
-
-  <p class="hero-eyebrow">Cricket Scoring App · Community Sports Operating System</p>
-
-  <h1 class="hero-title">
-    Every Community<br>Deserves a <em>Sports OS</em>
-  </h1>
-
-  <p class="hero-subtitle">
-    MatchMates removes the friction from organising and scoring cricket. Schedule a game, form <strong>AI-balanced teams</strong> instantly, and score live — all in minutes. Every match builds a player's <strong>personal history, milestones, and ranking</strong>. A mundane Sunday game becomes something worth showing up for.
+<!-- ── HERO ── -->
+<header class="inner-hero">
+  <div class="pitch-grid"></div>
+  <p class="page-eyebrow">Free · No Setup · Works on WhatsApp</p>
+  <h1 class="page-title">Cricket Scoring App for Local, Weekend &amp; Apartment Cricket</h1>
+  <p class="page-intro" style="margin-bottom:0.6rem">
+    <strong style="color:var(--lime);font-size:1.2em">We make your growth visible as a cricketer.</strong><br>Every run, wicket, and match permanently builds your cricket history.
   </p>
-
-  <div class="hero-actions">
-    <a href="https://nf2180.github.io/matchmates" class="btn-primary" target="_blank">Start a Match →</a>
-    <a href="pages/what-is-csos.html" class="btn-secondary">What is a CSOS?</a>
+  <p class="page-intro">
+    Live ball-by-ball scoring. Personal milestones. Unlimited career history. AI-balanced teams. MatchMates is the cricket scoring app built for the way most Indians actually play cricket — informally, regularly, and without a league secretary. <strong>Begin your cricket scoring within 5 clicks.</strong>
+  </p>
+  <div class="hero-actions" style="margin-top:2rem">
+    <a href="https://nf2180.github.io/matchmates" class="btn-primary" target="_blank">Open Cricket Scoring App →</a>
+    <a href="vs-cricheroes.html" class="btn-secondary">How We Compare to CricHeroes</a>
   </div>
+</header>
 
-  <div class="hero-sports" aria-label="Supported sports">
-    <a href="https://nf2180.github.io/matchmates" target="_blank" class="sport-tag" style="text-decoration:none;border-color:rgba(168,230,61,0.5);color:var(--lime)">🏏 Cricket <span style="font-size:0.6rem;background:var(--lime);color:var(--night);padding:0.1rem 0.4rem;border-radius:2px;margin-left:0.3rem;font-weight:700">LIVE</span></a>
-    <span class="sport-tag" style="opacity:0.45">🏸 Badminton <span style="font-size:0.6rem;margin-left:0.3rem;opacity:0.7">Coming soon</span></span>
-    <span class="sport-tag" style="opacity:0.45">🏓 Pickleball <span style="font-size:0.6rem;margin-left:0.3rem;opacity:0.7">Coming soon</span></span>
-    <span class="sport-tag" style="opacity:0.45">⚽ Football <span style="font-size:0.6rem;margin-left:0.3rem;opacity:0.7">Coming soon</span></span>
-    <span class="sport-tag" style="opacity:0.45">🏓 Table Tennis <span style="font-size:0.6rem;margin-left:0.3rem;opacity:0.7">Coming soon</span></span>
+<!-- ── 5-STEP WALKTHROUGH ── -->
+<section class="steps-section" aria-labelledby="steps-heading">
+  <p class="section-eyebrow">How It Works</p>
+  <h2 class="section-title" id="steps-heading">Start Scoring in 5 Clicks</h2>
+  <p class="section-lead">From opening the app to live ball-by-ball scoring — here's every step.</p>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-phone">
+        <span class="step-badge">Click 1</span>
+        <img src="images/step1-new-match.jpeg" alt="MatchMates home screen — tap + New Match Day to create a match" loading="lazy">
+        <span class="step-annotation ann-1">Tap + New Match Day</span>
+      </div>
+      <p class="step-num">Step 1</p>
+      <p class="step-title">Create a Match</p>
+      <p class="step-desc">One button on the home screen. Done in a second.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-phone">
+        <span class="step-badge">Click 2</span>
+        <img src="images/step2-add-players.jpeg" alt="MatchMates player add screen — paste names or search existing players" loading="lazy">
+        <span class="step-annotation ann-2">Paste or search names</span>
+      </div>
+      <p class="step-num">Step 2</p>
+      <p class="step-title">Add Players</p>
+      <p class="step-desc">Paste names from anywhere or search existing players. Add your ground. Tap Create.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-phone">
+        <span class="step-badge">Click 3</span>
+        <img src="images/step3-teams-toss.jpeg" alt="MatchMates Teams and Toss screen with AI-balanced Team A and Team B" loading="lazy">
+        <span class="step-annotation ann-3">AI-balanced teams ready</span>
+      </div>
+      <p class="step-num">Step 3</p>
+      <p class="step-title">Teams &amp; Toss</p>
+      <p class="step-desc">AI splits players into balanced Team A and Team B by rating. Swap anyone. Do the toss.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-phone">
+        <span class="step-badge">Click 4</span>
+        <img src="images/step4-innings-setup.jpeg" alt="MatchMates Innings Setup screen — select overs, openers, and opening bowler" loading="lazy">
+        <span class="step-annotation ann-4">Tap Start Innings 1</span>
+      </div>
+      <p class="step-num">Step 4</p>
+      <p class="step-title">Innings Setup</p>
+      <p class="step-desc">Set overs per side, pick your openers and opening bowler. Tap Start Innings.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-phone">
+        <span class="step-badge">Click 5</span>
+        <img src="images/step5-live-scoring.jpeg" alt="MatchMates live scoring screen — tap runs, extras, wicket per ball" loading="lazy">
+        <span class="step-annotation ann-5">Tap each ball outcome</span>
+      </div>
+      <p class="step-num">Step 5</p>
+      <p class="step-title">Live Scoring</p>
+      <p class="step-desc">Tap each ball — runs, Wide, No Ball, Wicket. Totals and run rates update instantly.</p>
+    </div>
   </div>
 </section>
 
-<!-- THE PROBLEM -->
-<section class="problems" aria-labelledby="problems-heading">
-  <p class="section-eyebrow">Why Games Stop Happening</p>
-  <h2 class="section-title" id="problems-heading">The Organiser Carries Too Much</h2>
-  <p class="section-lead">Every community has that one person who organises the cricket. They chase confirmations, form teams on instinct, keep score manually, and update a spreadsheet nobody else looks at. When they stop, the games stop. MatchMates fixes this — for the organiser and for every player who shows up.</p>
+<!-- ── TAGLINE BAND ── -->
+<div class="tagline-band">
+  <h2>Your cricket growth, visible.<br>Every match. Every season.</h2>
+  <p>Personal milestones. Career history that never disappears. Rankings after every ball.</p>
+  <a href="https://nf2180.github.io/matchmates" class="btn-dark" target="_blank">Open Cricket Scoring App →</a>
+</div>
 
-  <div class="problem-grid">
-    <div class="problem-card">
-      <div class="problem-icon">😓</div>
-      <h3 class="problem-title">Scoring Is Manual Friction</h3>
-      <p class="problem-desc">Someone has to keep a paper book, type scores into WhatsApp, and remember who got what wicket. One distraction and the record is wrong. MatchMates scores live — tap by tap, ball by ball, automatically.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon">⏱️</div>
-      <h3 class="problem-title">Team Formation Takes Forever</h3>
-      <p class="problem-desc">The organiser knows maybe 12 of the 22 players well enough to pick teams fairly. The rest is guesswork. MatchMates reads player ratings and suggests balanced teams in seconds.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon">🗓️</div>
-      <h3 class="problem-title">Scheduling Is a Weekend Job</h3>
-      <p class="problem-desc">Confirming 22 players, booking a ground, and communicating the plan takes more effort than the match itself. MatchMates handles availability, reminders, and ground booking in one place.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon">🏆</div>
-      <h3 class="problem-title">Good Performances Go Unnoticed</h3>
-      <p class="problem-desc">Rahul takes 4 wickets. Everyone cheers. By Monday it's forgotten. No record, no milestone, no rank change. MatchMates makes every performance count — permanently.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon">📉</div>
-      <h3 class="problem-title">Players Lose Interest Over Time</h3>
-      <p class="problem-desc">Without rankings, milestones, or history, there's no reason to show up consistently. Games feel disposable. MatchMates gives players a reason to perform — because it tracks everything and compares everyone.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon">🔄</div>
-      <h3 class="problem-title">History Resets When You Move</h3>
-      <p class="problem-desc">Three years of weekend cricket. Hundreds of matches. Then you change apartments and your record disappears. MatchMates gives players a permanent profile that travels with them — to any community, anywhere.</p>
-    </div>
-  </div>
-</section>
+<!-- ── CONTENT ── -->
+<article class="content-section">
 
-<!-- DEFINITION -->
-<section aria-labelledby="definition-heading">
-  <p class="section-eyebrow">The Cricket Scoring App for Local Cricket</p>
-  <h2 class="section-title" id="definition-heading">Built for the Scorer,<br>the Organiser, <em>and</em> the Player</h2>
+  <h2>What Makes a Good Cricket Scoring App for Local Cricket?</h2>
+  <p>Most <strong>cricket scoring apps</strong> are built for formal club cricket — structured leagues, registered players, dedicated scorers with time to set up every match from scratch. Local cricket is different. You have 22 people, a ground, an hour to play, and nobody wants to spend 20 minutes adding players before the toss.</p>
+
+  <p>A cricket scoring app for local cricket needs to do three things well:</p>
+  <ul>
+    <li><strong>Start fast</strong> — players joined, teams formed, toss done in under 5 minutes</li>
+    <li><strong>Score without friction</strong> — one tap per ball, automatic totals, no mental arithmetic mid-over</li>
+    <li><strong>Mean something after</strong> — every match adds to a player's permanent record, not a scorecard that disappears</li>
+  </ul>
 
   <div class="definition-block">
-    <p>
-      MatchMates does what CricHeroes doesn't — it works for <strong>everyday local cricket</strong>, not just formal leagues. Schedule a game, form balanced teams using player ratings, score live ball by ball, and let every player walk away with updated milestones, rankings, and career history. <strong>The game matters more when the record is permanent.</strong>
-    </p>
+    <p>MatchMates is the <strong>cricket scoring app</strong> for apartment tournaments, weekend cricket, Maidan cricket, and corporate cricket — anywhere informal cricket happens regularly and players deserve more than a forgotten WhatsApp message as their match record.</p>
   </div>
 
-  <p class="section-lead">
-    For the organiser: games scheduled and teams formed in minutes, not hours. For the scorer: live ball-by-ball scoring with zero manual effort after. For the player: a personal cricket history that grows with every match and travels with them for life.
-  </p>
+  <h2>Features Built for the Cricket Scorer</h2>
 
-  <p class="hero-subtitle" style="margin-top:-1rem">
-    Whether it's a <strong>weekend cricket match</strong> in your apartment complex, a <strong>local tournament on the Maidan</strong>, or a full society league — MatchMates gives every player <strong>unlimited personal history</strong>, career milestones, and live scorecards. <strong>Hassle-free cricket scoring</strong> that works from the first ball.
-  </p>
+  <h3>Live ball-by-ball scoring</h3>
+  <p>Tap the outcome for each delivery — runs, wickets, wides, no-balls, byes. MatchMates calculates totals, run rates, required rates, and partnerships automatically. The scorer focuses on the game; the app handles the arithmetic.</p>
 
-  <div class="hero-actions">
-    <a href="pages/what-is-csos.html" class="btn-secondary">Read the full definition →</a>
-  </div>
-</section>
+  <h3>Live scorecard viewable without download</h3>
+  <p>Share the scorecard link on WhatsApp before the match starts. Every player, spectator, and family member can follow ball by ball in any browser — no app download required to watch.</p>
 
-<!-- DOMAIN ENTITIES -->
-<section class="entities-section" aria-labelledby="entities-heading">
-  <p class="section-eyebrow">Domain Entities</p>
-  <h2 class="section-title" id="entities-heading">Every Concept, Connected</h2>
-  <p class="section-lead">MatchMates understands the full vocabulary of community sports. Each entity is a first-class citizen — not a workaround built on top of a generic tool.</p>
+  <h3>Players join via WhatsApp link</h3>
+  <p>No manual player entry. No searching by phone number. The organiser shares one WhatsApp link — players tap to join. Teams of 22 assembled in seconds, not 20 minutes.</p>
 
-  <div class="entity-grid">
-    <div class="entity-pill">Player <span class="entity-sub">Persistent identity</span></div>
-    <div class="entity-pill">Match <span class="entity-sub">Ball-by-ball record</span></div>
-    <div class="entity-pill">Tournament <span class="entity-sub">Full bracket management</span></div>
-    <div class="entity-pill">Season <span class="entity-sub">Historical archive</span></div>
-    <div class="entity-pill">Ranking <span class="entity-sub">ELO + Ladder</span></div>
-    <div class="entity-pill">Leaderboard <span class="entity-sub">Live standings</span></div>
-    <div class="entity-pill">Team <span class="entity-sub">Skill-balanced</span></div>
-    <div class="entity-pill">Venue <span class="entity-sub">Court booking</span></div>
-    <div class="entity-pill">Achievement <span class="entity-sub">Milestone tracking</span></div>
-    <div class="entity-pill">Community <span class="entity-sub">Society / Club</span></div>
-    <div class="entity-pill">Stats <span class="entity-sub">Career analytics</span></div>
-    <div class="entity-pill">Invitation <span class="entity-sub">WhatsApp join flow</span></div>
-  </div>
-</section>
+  <h2>Features Built for the Player</h2>
 
-<!-- WORKFLOW -->
-<section class="workflow" aria-labelledby="workflow-heading">
-  <p class="section-eyebrow">How It Works</p>
-  <h2 class="section-title" id="workflow-heading">From Resident to<br>Ranked Athlete</h2>
-  <p class="section-lead">The complete lifecycle of a community sports player — organized, tracked, and preserved.</p>
+  <h3>Personal milestones</h3>
+  <p>First half-century. First five-wicket haul. 50 matches played. MatchMates tracks <a href="player-identity.html" title="Persistent Sports Identity">personal milestones</a> automatically and marks them permanently on each player's profile. The milestone you hit in a Sunday apartment match counts — because now it's recorded forever.</p>
 
-  <div class="flow-steps">
-    <div class="flow-step">
-      <div class="flow-line"></div>
-      <div class="flow-num">1</div>
-      <div class="flow-content">
-        <p class="flow-title">Resident joins community</p>
-        <p class="flow-desc">Discovers the society sports group via WhatsApp link. One tap to join — no app store required.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-line"></div>
-      <div class="flow-num">2</div>
-      <div class="flow-content">
-        <p class="flow-title">Creates player profile</p>
-        <p class="flow-desc">Name, sports, skill level. This becomes their persistent identity — it follows them across communities.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-line"></div>
-      <div class="flow-num">3</div>
-      <div class="flow-content">
-        <p class="flow-title">Gets invited to a match</p>
-        <p class="flow-desc">Organizer creates a match, system suggests available players. Invites go via WhatsApp. Confirmations tracked automatically.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-line"></div>
-      <div class="flow-num">4</div>
-      <div class="flow-content">
-        <p class="flow-title">Teams are formed</p>
-        <p class="flow-desc">Balanced by skill ratings. No more stacking. Captains selected. Court confirmed.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-line"></div>
-      <div class="flow-num">5</div>
-      <div class="flow-content">
-        <p class="flow-title">Live ball-by-ball scoring</p>
-        <p class="flow-desc">Scorer enters runs, wickets, extras in real time. Scorecard visible to all players on their phones.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-line"></div>
-      <div class="flow-num">6</div>
-      <div class="flow-content">
-        <p class="flow-title">Rankings update automatically</p>
-        <p class="flow-desc">ELO ratings adjust. Leaderboard refreshes. Career stats compound. Every match becomes permanent history.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-num">7</div>
-      <div class="flow-content">
-        <p class="flow-title">Achievement unlocked. Identity grows.</p>
-        <p class="flow-desc">Player's profile now shows matches played, runs scored, wickets taken, win rate. This record never disappears — even if they move apartments.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  <h3>Unlimited personal history</h3>
+  <p>Every match adds to your career record — runs, wickets, averages, strike rates, economy rates — building across months and years. No other <strong>cricket scoring app for apartment cricket</strong> builds this kind of permanent personal record for informal games.</p>
 
-<!-- IDENTITY -->
-<section class="identity-section" aria-labelledby="identity-heading">
-  <p class="section-eyebrow">The Durable Idea</p>
-  <h2 class="section-title" id="identity-heading">Persistent Sports Identity</h2>
-  <p class="section-lead">LinkedIn did this for professional reputation. Strava did it for fitness activity. CricHeroes did it for cricket history within a league. MatchMates does it for everyday community sport — across all sports, across all communities.</p>
+  <h3>ELO player ratings and rankings</h3>
+  <p>Your <a href="elo-rating.html" title="ELO Rating in Community Sports">ELO rating</a> updates after every match. The community leaderboard updates live. Players have a reason to perform every time they play.</p>
 
-  <div class="identity-card" aria-label="Example player profile">
-    <p class="identity-name">Rahul Mehta</p>
-    <span class="identity-badge">Silver Ranked · Cricket</span>
+  <h3>Portable career record</h3>
+  <p>Move to a new apartment or city? Your cricket history travels with you. Join a new community on MatchMates and your full career record is immediately visible. No starting from zero.</p>
 
-    <div class="identity-stats">
-      <div class="stat">
-        <p class="stat-num">147</p>
-        <p class="stat-label">Matches</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">62%</p>
-        <p class="stat-label">Win Rate</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">1,842</p>
-        <p class="stat-label">ELO Score</p>
-      </div>
-    </div>
+  <h2>Features Built for the Organiser</h2>
 
-    <div class="identity-trail">
-      <span class="trail-tag">Mantri Elegance (2021–23)</span>
-      <span class="trail-tag">Prestige Shantiniketan (2023–25)</span>
-      <span class="trail-tag">Brigade Horizon (2025–)</span>
-    </div>
-  </div>
+  <h3>AI-balanced team formation</h3>
+  <p>MatchMates reads each player's ELO rating and suggests balanced teams automatically. No more captain's bias, no more stacked sides. Fair teams in seconds — and closer matches as a result.</p>
 
-  <br><br>
-  <a href="pages/player-identity.html" class="btn-secondary">Why identity is the real moat →</a>
-</section>
+  <h3>Game scheduling</h3>
+  <p>Create a match, set the date, time, and ground. The organiser sees confirmed, pending, and declined players in one view — no chasing WhatsApp confirmations.</p>
 
-<!-- PRINCIPLES -->
-<section class="principles" aria-labelledby="principles-heading">
-  <p class="section-eyebrow">Design Principles</p>
-  <h2 class="section-title" id="principles-heading">How We Think About<br>Community Sports</h2>
+  <h3>Tournament management</h3>
+  <p>Running a society cricket tournament? MatchMates generates fixtures automatically for <a href="round-robin-vs-knockout.html" title="Round Robin vs Knockout">round robin, knockout, or league formats</a>. Standings update live. No spreadsheet needed.</p>
 
-  <div class="principle-list">
-    <div class="principle-item">
-      <h3 class="principle-title">Every player has one identity</h3>
-      <p class="principle-desc">A player's history, rankings, achievements, and reputation belong to them — not to a society's WhatsApp group or a season's spreadsheet.</p>
-    </div>
-    <div class="principle-item">
-      <h3 class="principle-title">Every match becomes permanent history</h3>
-      <p class="principle-desc">Ball-by-ball records, scorecards, and team compositions are preserved forever. What happened on the pitch stays on the record.</p>
-    </div>
-    <div class="principle-item">
-      <h3 class="principle-title">Rankings evolve automatically</h3>
-      <p class="principle-desc">ELO ratings and ladder standings update after every match. No monthly manual effort. No stale leaderboards.</p>
-    </div>
-    <div class="principle-item">
-      <h3 class="principle-title">Communities should not depend on one volunteer</h3>
-      <p class="principle-desc">When the organizer moves cities, the community doesn't collapse. Institutional memory lives in the platform, not in someone's phone.</p>
-    </div>
-    <div class="principle-item">
-      <h3 class="principle-title">Sports data should survive relocation</h3>
-      <p class="principle-desc">Moving to a new apartment or city shouldn't reset your sporting reputation. Identity travels with the player.</p>
-    </div>
-    <div class="principle-item">
-      <h3 class="principle-title">Participation should increase over time</h3>
-      <p class="principle-desc">Rankings, achievements, and visible history create intrinsic motivation to play more. A good sports OS makes the community more active, not just more organized.</p>
-    </div>
-  </div>
-</section>
+  <h2>Who Uses MatchMates</h2>
+  <ul>
+    <li><strong>Apartment complex cricket groups</strong> in Bangalore, Mumbai, Pune, Hyderabad, and Chennai</li>
+    <li><strong>Weekend cricket groups</strong> at local grounds and Maidans</li>
+    <li><strong>Corporate cricket leagues</strong> running inter-department tournaments</li>
+    <li><strong>Gated society sports committees</strong> managing cricket across the year</li>
+    <li><strong>College alumni cricket groups</strong> who meet monthly</li>
+  </ul>
 
-<!-- CTA -->
-<section class="cta-section" aria-label="Call to action">
-  <p class="section-eyebrow" style="color:rgba(245,242,235,0.6)">Ready to Start?</p>
-  <h2 class="section-title">Your Community's Sports Life<br>Starts Here</h2>
-  <p class="section-lead">No app download needed. Share a link, let players join via WhatsApp, and start your first match in under 5 minutes.</p>
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is MatchMates free?</h3>
+  <p>Yes. Free for live scoring, personal history, rankings, and tournament management.</p>
+
+  <h3>Do all players need to download the app?</h3>
+  <p>Live scorecards are viewable in any browser without downloading. Players tracking personal history and rankings need to download the app.</p>
+
+  <h3>Does it work for short formats like 6-over or 8-over cricket?</h3>
+  <p>Yes. MatchMates works for any over format — 6, 8, 10, 20, or unlimited overs.</p>
+
+  <h3>How is it different from CricHeroes?</h3>
+  <p>In CricHeroes, every player must be manually added by phone number and must have the app installed. In MatchMates, players join via a WhatsApp link instantly. Live scorecards are viewable without any download. See the full <a href="vs-cricheroes.html" title="MatchMates vs CricHeroes comparison">MatchMates vs CricHeroes comparison</a>.</p>
+
+</article>
+
+<section class="cta-section">
+  <p class="section-eyebrow" style="color:rgba(245,242,235,0.6)">Free Cricket Scoring App</p>
+  <h2 class="section-title">Score Your Next Match<br>on MatchMates</h2>
+  <p class="section-lead">Live scoring. Personal milestones. Career history that never disappears. Start in under 5 minutes — free.</p>
   <div class="hero-actions" style="justify-content:center">
-    <a href="https://nf2180.github.io/matchmates" class="btn-primary" target="_blank">Open MatchMates →</a>
-    <a href="pages/organize-tournament.html" class="btn-secondary" style="border-color:rgba(245,242,235,0.3);color:var(--white)">How to Organize a Tournament</a>
+    <a href="https://nf2180.github.io/matchmates" class="btn-primary" target="_blank">Open Cricket Scoring App →</a>
+    <a href="organize-tournament.html" class="btn-secondary" style="border-color:rgba(245,242,235,0.3);color:var(--white)">Organise a Tournament →</a>
   </div>
 </section>
 
 <footer>
   <div>
     <p class="footer-brand">Match<span>Mates</span></p>
-    <p class="footer-desc">The operating system for community sports. Built for gated societies, residential communities, clubs, and corporate campuses.</p>
+    <p class="footer-desc">The cricket scoring app for local, weekend, and apartment cricket.</p>
   </div>
   <ul class="footer-links">
-    <li><a href="pages/what-is-csos.html">What is a CSOS?</a></li>
-    <li><a href="pages/player-identity.html">Player Identity</a></li>
-    <li><a href="pages/why-not-whatsapp.html">Why Not WhatsApp?</a></li>
-    <li><a href="pages/vs-cricheroes.html">MatchMates vs CricHeroes</a></li>
-    <li><a href="pages/organize-tournament.html">How to Organize a Tournament</a></li>
-    <li><a href="https://nf2180.github.io/matchmates" target="_blank">Open App</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="vs-cricheroes.html">vs CricHeroes</a></li>
+    <li><a href="player-identity.html">Player Identity</a></li>
+    <li><a href="organize-tournament.html">Organize a Tournament</a></li>
+    <li><a href="elo-rating.html">ELO Rating</a></li>
+    <li><a href="about.html">About MatchMates</a></li>
   </ul>
 </footer>
 

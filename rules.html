@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules of Cricket — Basic Laws, MatchMates Scoring & Local Cricket Rules</title>
+  <meta name="description" content="A complete guide to cricket rules — the basic Laws of Cricket, how MatchMates scores matches, and the informal rules played in apartment, Maidan, tape ball, and tennis ball cricket across India.">
+  <meta name="keywords" content="rules of cricket, basic laws of cricket, cricket scoring rules, local cricket rules India, tape ball cricket rules, tennis ball cricket rules, apartment cricket rules, Maidan cricket rules, MatchMates scoring rules">
+  <link rel="canonical" href="https://nf2180.github.io/matchmates-web/rules.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB123FQ53Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-YB123FQ53Y");
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Rules of Cricket — Basic Laws, MatchMates Scoring & Local Cricket Rules",
+    "description": "A complete guide to cricket rules covering the basic Laws of Cricket, MatchMates-specific scoring rules, and the informal rules played in apartment, Maidan, tape ball, and tennis ball cricket across India.",
+    "author": {"@type": "Organization", "name": "MatchMates"},
+    "publisher": {"@type": "Organization", "name": "MatchMates"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a wide ball in cricket?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A wide is a delivery that passes too far from the batsman to be hit with a normal cricket stroke. The batting team receives 1 extra run, and the delivery is not counted as a valid ball — it must be bowled again."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is a no ball in cricket?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A no ball is an illegal delivery — most commonly when the bowler's front foot lands beyond the popping crease. The batting team receives 1 extra run. The delivery does not count and must be re-bowled. A batsman cannot be bowled, LBW, caught, or stumped off a no ball."}
+      },
+      {
+        "@type": "Question",
+        "name": "What are the rules of tape ball cricket?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Tape ball cricket uses a tennis ball wrapped in electrical tape to create swing. Common rules include: no LBW, one or two pitches allowed, boundaries marked by cones or walls, limited overs (typically 4–10 per side), and fielding restrictions in small grounds. Teams are usually 6–11 players."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is one tip one hand in local cricket?",
+        "acceptedAnswer": {"@type": "Answer", "text": "One tip one hand (OTOH) is a fielding rule used in informal cricket where a batsman is out if a fielder catches the ball after it bounces once, using only one hand. It is commonly used in small grounds or indoor cricket to compensate for limited fielding space."}
+      }
+    ]
+  }
+  </script>
+  <style>
+    .rules-nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .rules-nav a {
+      border: 1px solid var(--border);
+      color: var(--slate);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 1rem;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .rules-nav a:hover { border-color: var(--lime); color: var(--lime); }
+
+    .rules-section {
+      padding: 80px 5vw;
+      border-top: 1px solid var(--border);
+    }
+
+    .rules-section:first-of-type { border-top: none; }
+
+    .rules-section.alt { background: var(--forest); }
+
+    .rule-block {
+      background: var(--card-bg);
+      border-left: 3px solid var(--border);
+      padding: 1.5rem 2rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+      transition: border-color 0.2s;
+    }
+
+    .rule-block:hover { border-left-color: var(--lime); }
+
+    .rule-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+
+    .rule-desc {
+      font-size: 0.875rem;
+      color: var(--slate);
+      line-height: 1.7;
+    }
+
+    .rule-desc strong { color: var(--white); }
+
+    .game-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .game-card-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+    }
+
+    .game-card-sub {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-bottom: 1.25rem;
+    }
+
+    .game-rules-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .game-rules-list li {
+      font-size: 0.85rem;
+      color: var(--slate);
+      padding-left: 1.25rem;
+      position: relative;
+      line-height: 1.55;
+    }
+
+    .game-rules-list li::before {
+      content: '→';
+      position: absolute; left: 0;
+      color: var(--lime);
+      font-size: 0.75rem;
+    }
+
+    .game-rules-list li strong { color: var(--white); }
+
+    .mm-rule {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+
+    .mm-col { background: var(--card-bg); padding: 1.25rem 1.5rem; }
+
+    .mm-col-head {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .mm-col-head.yes { color: var(--lime); }
+    .mm-col-head.no { color: #e55; }
+
+    .mm-col ul { list-style: none; }
+
+    .mm-col ul li {
+      font-size: 0.82rem;
+      color: var(--slate);
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.5;
+    }
+
+    .mm-col ul li:last-child { border-bottom: none; }
+
+    @media(max-width: 600px) {
+      .mm-rule { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Match<span>Mates</span></a>
+  <ul class="nav-links">
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://nf2180.github.io/matchmates" class="nav-cta" target="_blank">Open App →</a></li>
+  </ul>
+</nav>
+
+<header class="inner-hero">
+  <div class="pitch-grid"></div>
+  <p class="page-eyebrow">Cricket Rules Reference</p>
+  <h1 class="page-title">Rules of Cricket</h1>
+  <p class="page-intro">Three sections — the basic Laws of Cricket everyone should know, how MatchMates scores matches, and the informal rules played in apartment, Maidan, tape ball, and tennis ball cricket across India.</p>
+
+  <div class="rules-nav">
+    <a href="#basic-laws">Basic Laws of Cricket</a>
+    <a href="#matchmates-rules">MatchMates Scoring Rules</a>
+    <a href="#local-rules">Local Cricket Rules</a>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 1 — BASIC LAWS OF CRICKET
+══════════════════════════════════════════════ -->
+<section class="rules-section" id="basic-laws">
+  <p class="section-eyebrow">Section 1</p>
+  <h2 class="section-title">Basic Laws of Cricket</h2>
+  <p class="section-lead">Cricket is governed by 42 Laws maintained by the Marylebone Cricket Club (MCC). These are the fundamentals every player should know — from how runs are scored to how a batsman is dismissed.</p>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">The Objective</h3>
+  <p style="color:var(--slate);line-height:1.8;margin-bottom:2rem">Cricket is played between two teams of 11 players each. One team bats, attempting to score as many runs as possible. The other team fields and bowls, attempting to dismiss the batting side. The team that scores the most runs wins.</p>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">Scoring Runs</h3>
+
+  <div class="rule-block">
+    <p class="rule-name">Batting Runs</p>
+    <p class="rule-desc">The striker hits the ball and both batsmen run between the wickets. Each completed run (both batsmen crossing and reaching the opposite crease) scores 1 run.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Boundaries — 4 Runs</p>
+    <p class="rule-desc">If the ball reaches or crosses the boundary rope after touching the ground, the batting team scores <strong>4 runs</strong> automatically. The batsmen do not need to run.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Boundaries — 6 Runs</p>
+    <p class="rule-desc">If the ball clears the boundary rope without touching the ground (a six), the batting team scores <strong>6 runs</strong> automatically.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Extras</p>
+    <p class="rule-desc">Runs scored without the bat: <strong>Wides</strong> (1 run + reball), <strong>No Balls</strong> (1 run + reball), <strong>Byes</strong> (runs scored without bat contact, ball not called wide), <strong>Leg Byes</strong> (ball deflects off the batsman's body, not the bat). Wides and No Balls are charged to the bowler. Byes and Leg Byes go to the team total but not the bowler's figures.</p>
+  </div>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">Ways to Get Out (Dismissals)</h3>
+
+  <div class="rule-block">
+    <p class="rule-name">Bowled</p>
+    <p class="rule-desc">The ball delivered by the bowler hits the stumps and dislodges at least one bail. The batsman is out regardless of whether the ball touched the bat, pad, or body first.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Caught</p>
+    <p class="rule-desc">A fielder catches the ball after it has been hit by the batsman and before it touches the ground. The batsman is out. The catch must be taken cleanly — if the fielder touches the boundary rope while holding the ball, it counts as a six, not a catch.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">LBW — Leg Before Wicket</p>
+    <p class="rule-desc">The batsman is out LBW when the ball strikes their body (not the bat) and would have gone on to hit the stumps. Key conditions: the ball must not pitch outside leg stump; the batsman must not be struck outside the line of off stump while playing a shot; the ball must not be a no ball. LBW requires an umpire decision — it cannot be self-judged in informal cricket.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Run Out</p>
+    <p class="rule-desc">A batsman is run out when they are out of their crease (attempting or not attempting a run) and the fielding side breaks the wicket with the ball before the batsman grounds their bat behind the crease. Either batsman can be run out at either end.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Stumped</p>
+    <p class="rule-desc">The wicketkeeper puts down the wicket while the batsman is out of their crease — but only off a legitimate delivery (not a no ball). The batsman must not be attempting a run. Stumped is different from run out in that it can only be done by the wicketkeeper and only when the batsman has left the crease to play the ball.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Hit Wicket</p>
+    <p class="rule-desc">The batsman dislodges the bails with their bat, body, or clothing while playing a shot or setting off for the first run. Out — even if the ball was a wide or the fielding side did not appeal immediately.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Handled the Ball / Obstructing the Field</p>
+    <p class="rule-desc">A batsman is out if they deliberately touch the ball with a hand not holding the bat, or deliberately obstruct a fielder. These are rare dismissals but valid under the Laws.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Timed Out</p>
+    <p class="rule-desc">An incoming batsman must be ready to face the next ball within 3 minutes of the previous wicket falling. Failure to do so can result in being timed out — extremely rare in practice.</p>
+  </div>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">The Wide Ball</h3>
+  <div class="rule-block">
+    <p class="rule-name">Wide</p>
+    <p class="rule-desc">A delivery that passes too far from the batsman to be hit with a normal cricket stroke. The batting team receives <strong>1 extra run</strong>, the delivery does not count as a valid ball, and it must be re-bowled. Wide lines are judged by the umpire based on the batsman's stance — a ball that passes down the leg side or well outside off stump is typically called wide.</p>
+  </div>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">The No Ball</h3>
+  <div class="rule-block">
+    <p class="rule-name">No Ball</p>
+    <p class="rule-desc">An illegal delivery — most commonly when the bowler's front foot lands beyond the popping crease (overstepping). Also called for: throwing (straightening the arm), bouncing above head height, full toss above waist height, fielders in illegal positions. <strong>1 extra run</strong> is added. A batsman cannot be out bowled, LBW, caught, or stumped off a no ball — but can be run out.</p>
+  </div>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">Overs and Innings</h3>
+  <div class="rule-block">
+    <p class="rule-name">An Over</p>
+    <p class="rule-desc">An over consists of <strong>6 valid deliveries</strong> from the same end. Wides and no balls are not counted as valid deliveries and extend the over. A bowler cannot bowl consecutive overs. In limited-overs cricket, each bowler has a maximum number of overs they may bowl (typically one-fifth of the total overs).</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">An Innings</p>
+    <p class="rule-desc">A team's innings ends when <strong>10 wickets have fallen</strong> (all 11 batsmen, minus the last who has no partner) or the allocated overs are completed, whichever comes first. In limited-overs cricket, the team that bats second must chase the first team's total within their allocated overs.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 2 — MATCHMATES SCORING RULES
+══════════════════════════════════════════════ -->
+<section class="rules-section alt" id="matchmates-rules">
+  <p class="section-eyebrow">Section 2</p>
+  <h2 class="section-title">MatchMates Scoring Rules</h2>
+  <p class="section-lead">MatchMates scores matches using standard cricket rules with a few practical adaptations for informal cricket. Here's exactly what the app scores and what it doesn't — so there are no surprises mid-match.</p>
+
+  <div class="mm-rule">
+    <div class="mm-col">
+      <p class="mm-col-head yes">✓ What MatchMates Scores</p>
+      <ul>
+        <li>Runs off the bat (0, 1, 2, 3, 4, 6)</li>
+        <li>Wide — 1 extra, ball re-bowled</li>
+        <li>No Ball — 1 extra, ball re-bowled</li>
+        <li>Bye — runs scored, no bat contact</li>
+        <li>Leg Bye — runs off body deflection</li>
+        <li>Wicket — any valid dismissal type</li>
+        <li>Over-by-over ball sequence</li>
+        <li>Current over ball-by-ball display</li>
+        <li>Run rate and required run rate</li>
+        <li>Partnership runs and balls</li>
+        <li>Bowler figures (overs, runs, wickets)</li>
+        <li>Batsman strike rate</li>
+        <li>Career stats update after match</li>
+        <li>Undo last ball</li>
+        <li>Edit any previous ball</li>
+      </ul>
+    </div>
+    <div class="mm-col">
+      <p class="mm-col-head no">✗ What MatchMates Does Not Currently Score</p>
+      <ul>
+        <li>Dismissal type detail (caught by whom, bowled, LBW etc.) — wicket recorded but mode not specified</li>
+        <li>Fielding positions and catches by fielder name</li>
+        <li>Wagon wheel (shot direction)</li>
+        <li>Pitch map (ball landing position)</li>
+        <li>DRS / review system</li>
+        <li>Powerplay overs tracking</li>
+        <li>Ball-by-ball commentary</li>
+        <li>Video highlights</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;margin:2rem 0 1rem">How Wickets Are Recorded</h3>
+  <div class="rule-block">
+    <p class="rule-name">Wicket Button</p>
+    <p class="rule-desc">Tap the red <strong>Wicket</strong> button for any dismissal — bowled, caught, run out, stumped, LBW, hit wicket. The wicket is recorded against the current bowler's figures and the batting side loses one wicket. The next batsman is selected from the batting lineup.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Undo</p>
+    <p class="rule-desc">The <strong>← Undo</strong> button reverses the last ball entered — including wickets, runs, and extras. Use it immediately if a wrong input is made. For older corrections, the Edit ball modal allows changes to any previous delivery in the innings.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Wide and No Ball</p>
+    <p class="rule-desc">Tap <strong>Wide</strong> or <strong>No Ball</strong> to record 1 extra. If additional runs were scored off the wide or no ball, you will be prompted to enter the run count. The delivery is automatically added to the over without counting as a valid ball.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">Byes and Leg Byes</p>
+    <p class="rule-desc">Tap <strong>Bye</strong> or <strong>Leg Bye</strong> and enter the number of runs taken. These count as valid deliveries. Runs go to the team total but not to the batsman's score or the bowler's runs conceded.</p>
+  </div>
+
+  <div class="rule-block">
+    <p class="rule-name">End of Over</p>
+    <p class="rule-desc">After 6 valid deliveries, MatchMates automatically prompts the selection of the next bowler. The over count advances. Strike rotates if an odd number of runs were scored off the last ball.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 3 — LOCAL CRICKET RULES
+══════════════════════════════════════════════ -->
+<section class="rules-section" id="local-rules">
+  <p class="section-eyebrow">Section 3</p>
+  <h2 class="section-title">Local Cricket Rules</h2>
+  <p class="section-lead">Informal cricket across India has developed its own rich set of variations — adapted for small grounds, soft balls, limited players, and maximum fun. Here are the most common formats and the rules typically played in each.</p>
+
+  <!-- TAPE BALL -->
+  <div class="game-card">
+    <p class="game-card-title">🏏 Tape Ball Cricket</p>
+    <p class="game-card-sub">Rubber or hard ball · Wrapped in electrical tape · Common in urban India, Pakistan</p>
+    <ul class="game-rules-list">
+      <li><strong>Ball:</strong> Tennis ball wrapped tightly in electrical tape (1–3 layers). Creates swing and pace on hard surfaces.</li>
+      <li><strong>Teams:</strong> 6 to 11 players per side. Flexible based on availability.</li>
+      <li><strong>Overs:</strong> 4 to 12 overs per side depending on time and players.</li>
+      <li><strong>No LBW:</strong> LBW is almost never given in tape ball — too contentious without neutral umpires.</li>
+      <li><strong>One Tip One Hand (OTOH):</strong> A catch after one bounce, taken with one hand, counts as a dismissal. Widely used to compensate for small grounds.</li>
+      <li><strong>Boundaries:</strong> Marked by cones, walls, parked vehicles, or agreed physical features. A ball hitting a boundary marker on the full is a 6.</li>
+      <li><strong>Lost Ball:</strong> If the ball is lost, the batting team loses 5 runs or the last batted score — whichever is lower. Match resumes with a new ball.</li>
+      <li><strong>Batting pairs:</strong> Some groups use pair batting — each pair bats for a set number of overs, accumulates runs, and a team's total is the aggregate of all pairs.</li>
+      <li><strong>Last man stands:</strong> The last batsman cannot be run out at the non-striker's end in some formats — he must face at least one ball.</li>
+    </ul>
+  </div>
+
+  <!-- TENNIS BALL -->
+  <div class="game-card">
+    <p class="game-card-title">🎾 Tennis Ball Cricket</p>
+    <p class="game-card-sub">Standard tennis ball · Softer, safer · Most common in apartments and parks</p>
+    <ul class="game-rules-list">
+      <li><strong>Ball:</strong> Standard yellow tennis ball. Slower, safer, and easier to control in confined spaces.</li>
+      <li><strong>Pitching rules:</strong> Bowling is often restricted to a maximum of 1 bounce (full toss or one pitch only) to prevent slow grounders on open grounds.</li>
+      <li><strong>No LBW:</strong> Universally excluded in tennis ball cricket. The ball doesn't behave the same way and no neutral umpire is available.</li>
+      <li><strong>OTOH:</strong> One tip one hand is standard in most apartment and park cricket played with a tennis ball.</li>
+      <li><strong>Underarm allowed:</strong> Some groups allow underarm bowling, especially for beginners or mixed-age groups.</li>
+      <li><strong>Minimum overs per bowler:</strong> Some groups enforce a minimum — each bowler must bowl at least 1 over to prevent teams from using 2–3 bowlers for the entire innings.</li>
+      <li><strong>Boundaries:</strong> Specific for the ground — walls on the full = 6, wall after bounce = 4. Agreed before the toss.</li>
+      <li><strong>Retired hurt:</strong> A batsman can retire to give others a chance. They may return to bat if wickets fall — at the discretion of the opposing captain.</li>
+    </ul>
+  </div>
+
+  <!-- APARTMENT CRICKET -->
+  <div class="game-card">
+    <p class="game-card-title">🏢 Apartment Complex Cricket</p>
+    <p class="game-card-sub">Tennis or tape ball · Small ground · Mixed skill levels</p>
+    <ul class="game-rules-list">
+      <li><strong>Ground:</strong> Typically a parking lot, garden, or open podium. Irregular shape and hard surface.</li>
+      <li><strong>Overs:</strong> 6 to 10 overs per side. Matches designed to finish within 2 hours.</li>
+      <li><strong>Wall/building boundaries:</strong> Specific rules for each surface — hit the building on the full = 6, hit after one bounce = 4, over the boundary rope = 6.</li>
+      <li><strong>No LBW:</strong> Standard exclusion. Too contentious in social cricket.</li>
+      <li><strong>OTOH:</strong> Almost universally played to compensate for small outfield.</li>
+      <li><strong>Batting rotation:</strong> All players get to bat regardless of wickets — common in social cricket where participation matters more than strict elimination.</li>
+      <li><strong>Bowling cap:</strong> Each bowler limited to 2 overs maximum in a 10-over game to ensure everyone bowls.</li>
+      <li><strong>Minimum age rule:</strong> Some societies run separate matches for age groups or use handicapping (younger players get extra runs).</li>
+      <li><strong>Night cricket:</strong> Under floodlights or streetlights, a white tape ball is used for visibility.</li>
+    </ul>
+  </div>
+
+  <!-- MAIDAN CRICKET -->
+  <div class="game-card">
+    <p class="game-card-title">🌳 Maidan Cricket</p>
+    <p class="game-card-sub">Open ground · Hard or tennis ball · Multi-pitch, crowded</p>
+    <ul class="game-rules-list">
+      <li><strong>Ground:</strong> Open public ground shared with multiple other games simultaneously. Boundaries are flexible and often verbal ("that tree is a 4").</li>
+      <li><strong>Ball:</strong> Hard leather ball or heavy tape ball. Some Maidans use rubber balls for safety.</li>
+      <li><strong>Overs:</strong> 10 to 20 overs per side. Weekend Maidan games often play 20 overs.</li>
+      <li><strong>Shared outfield:</strong> Balls from other pitches can interrupt play. A ball from an adjacent pitch entering the field is treated as dead ball — the delivery is re-bowled.</li>
+      <li><strong>LBW:</strong> More likely to be given on open Maidans with designated umpires or experienced players. Often by agreement before the game.</li>
+      <li><strong>Umpires:</strong> Usually one fielding side player umpires at square leg, batting side player at the bowler's end — a system prone to bias but universally accepted.</li>
+      <li><strong>No ball height rule:</strong> Full toss above waist height is called no ball and a free hit in many Maidan groups (mirroring T20 rules).</li>
+      <li><strong>Free hit:</strong> Off a no ball, the next delivery is a free hit — the batsman cannot be dismissed except by run out. Common in groups that follow T20 rules informally.</li>
+      <li><strong>Lost ball:</strong> 5-run penalty or last batted score (lower of the two) deducted from batting side. New ball used.</li>
+    </ul>
+  </div>
+
+  <!-- CORPORATE CRICKET -->
+  <div class="game-card">
+    <p class="game-card-title">💼 Corporate Cricket</p>
+    <p class="game-card-sub">Tennis or tape ball · Mixed skill · Inter-department or inter-company</p>
+    <ul class="game-rules-list">
+      <li><strong>Format:</strong> Typically 8–12 overs per side. Designed to complete in one afternoon.</li>
+      <li><strong>Mixed teams:</strong> Often requires each team to field at least 2 women players, with bonus runs for women batters (e.g., runs scored by women count double).</li>
+      <li><strong>All must bowl:</strong> Every player in the team must bowl at least 1 over. Spreads participation and prevents specialists from dominating.</li>
+      <li><strong>All must bat:</strong> Batting pairs or a minimum of 4 balls per batter ensures everyone participates regardless of skill.</li>
+      <li><strong>No bouncers:</strong> Short-pitched bowling restricted or banned for safety in corporate environments.</li>
+      <li><strong>Drinks break:</strong> Mandatory mid-innings break — especially in summer afternoon games.</li>
+      <li><strong>Umpire:</strong> Often a neutral company employee or event organiser. Appeals handled quickly to keep the match moving.</li>
+      <li><strong>Spirit of cricket:</strong> Walking (self-declaring out without umpire decision) is encouraged in corporate cricket to maintain goodwill between departments.</li>
+    </ul>
+  </div>
+
+  <!-- GULLY CRICKET -->
+  <div class="game-card">
+    <p class="game-card-title">🛣️ Gully Cricket</p>
+    <p class="game-card-sub">Street or narrow lane · Any ball · Minimal equipment</p>
+    <ul class="game-rules-list">
+      <li><strong>Ground:</strong> Narrow lane, street, or corridor. Length and width vary — often just enough for a pitch.</li>
+      <li><strong>Ball:</strong> Rubber ball, tennis ball, or tape ball. Plastic bat common.</li>
+      <li><strong>Teams:</strong> As few as 3 vs 3. Flexible and immediate — anyone who shows up plays.</li>
+      <li><strong>One side batting:</strong> In very narrow lanes, shots to one side only — hitting to the left of the bowler (for a right-handed batter) is out or costs no runs.</li>
+      <li><strong>Tip and run:</strong> If the batsman hits the ball, they must run — no choice. If they don't run after hitting, they're out. Keeps the game fast in small spaces.</li>
+      <li><strong>Auto-out boundaries:</strong> Certain areas are automatic outs — hitting through a specific window, over a wall, or into a garden.</li>
+      <li><strong>Wicket:</strong> A wall, chalked stumps, or a single stump. Anything agreed as the target.</li>
+      <li><strong>Self-umpired:</strong> No umpires. Disputed calls settled by majority agreement or replay.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="cta-section">
+  <p class="section-eyebrow" style="color:rgba(245,242,235,0.6)">Score Any Format</p>
+  <h2 class="section-title">MatchMates Works for<br>All of These</h2>
+  <p class="section-lead">Tape ball, tennis ball, apartment cricket, Maidan cricket — MatchMates scores any format and builds your permanent personal history, whatever the rules.</p>
+  <div class="hero-actions" style="justify-content:center">
+    <a href="https://nf2180.github.io/matchmates" class="btn-primary" target="_blank">Open Cricket Scoring App →</a>
+    <a href="blog.html" class="btn-secondary" style="border-color:rgba(245,242,235,0.3);color:var(--white)">Read the Blog →</a>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <p class="footer-brand">Match<span>Mates</span></p>
+    <p class="footer-desc">The cricket scoring app for local, weekend, and apartment cricket.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules of Cricket</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://nf2180.github.io/matchmates" target="_blank">Open App</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>

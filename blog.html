@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Community Sports, Cricket Scoring & More | MatchMates</title>
+  <meta name="description" content="Guides, explainers, and deep dives on community sports, cricket scoring, player identity, tournament management, and the Community Sports Operating System category.">
+  <meta name="keywords" content="community sports blog, cricket scoring guide, apartment cricket tournament, community sports operating system, player identity cricket, ELO rating sports">
+  <link rel="canonical" href="https://nf2180.github.io/matchmates-web/blog.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB123FQ53Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-YB123FQ53Y");
+  </script>
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .blog-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s;
+    }
+
+    .blog-card:hover {
+      border-color: var(--lime);
+      transform: translateY(-2px);
+    }
+
+    .blog-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-excerpt {
+      font-size: 0.85rem;
+      color: var(--slate);
+      line-height: 1.65;
+      flex-grow: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    .blog-read {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--lime);
+      letter-spacing: 0.05em;
+    }
+
+    .blog-category {
+      margin-top: 4rem;
+    }
+
+    .blog-category-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--slate);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Match<span>Mates</span></a>
+  <ul class="nav-links">
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://nf2180.github.io/matchmates" class="nav-cta" target="_blank">Open App →</a></li>
+  </ul>
+</nav>
+
+<header class="inner-hero">
+  <div class="pitch-grid"></div>
+  <p class="page-eyebrow">MatchMates Blog</p>
+  <h1 class="page-title">Guides, Explainers &amp; Deep Dives</h1>
+  <p class="page-intro">Everything you need to know about community sports, cricket scoring, player identity, tournament formats, and the ideas behind MatchMates.</p>
+</header>
+
+<section style="padding: 60px 5vw 100px;">
+
+  <!-- CATEGORY: Getting Started -->
+  <div class="blog-category">
+    <p class="blog-category-title">Getting Started</p>
+    <div class="blog-grid">
+
+      <a href="pages/organize-tournament.html" class="blog-card">
+        <p class="blog-tag">Organiser Guide</p>
+        <p class="blog-title">How to Organise a Community Sports Tournament</p>
+        <p class="blog-excerpt">From the first WhatsApp announcement to the final standings — a complete guide for the volunteer organiser who wants to run a proper tournament without drowning in spreadsheets.</p>
+        <span class="blog-read">Read guide →</span>
+      </a>
+
+      <a href="pages/why-not-whatsapp.html" class="blog-card">
+        <p class="blog-tag">Coordination</p>
+        <p class="blog-title">Why WhatsApp Groups Fail for Community Sports</p>
+        <p class="blog-excerpt">WhatsApp is familiar, free, and already installed. It is also structurally wrong for sports coordination. Here are the 7 specific ways it breaks down.</p>
+        <span class="blog-read">Read article →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- CATEGORY: Understanding MatchMates -->
+  <div class="blog-category">
+    <p class="blog-category-title">Understanding MatchMates</p>
+    <div class="blog-grid">
+
+      <a href="pages/what-is-csos.html" class="blog-card">
+        <p class="blog-tag">Explainer</p>
+        <p class="blog-title">What is a Community Sports Operating System?</p>
+        <p class="blog-excerpt">A foundational explanation of the software category that replaces fragmented tools — WhatsApp groups, spreadsheets, and single-sport apps — with a unified platform built for the way communities actually play sports.</p>
+        <span class="blog-read">Read explainer →</span>
+      </a>
+
+      <a href="pages/vs-cricheroes.html" class="blog-card">
+        <p class="blog-tag">Comparison</p>
+        <p class="blog-title">MatchMates vs CricHeroes — Which is Right for Your Community?</p>
+        <p class="blog-excerpt">CricHeroes and MatchMates both score cricket matches. But they're built for fundamentally different jobs. This comparison explains when to use which.</p>
+        <span class="blog-read">Read comparison →</span>
+      </a>
+
+      <a href="pages/player-identity.html" class="blog-card">
+        <p class="blog-tag">The Big Idea</p>
+        <p class="blog-title">Why Every Player Needs a Persistent Sports Identity</p>
+        <p class="blog-excerpt">LinkedIn did it for professional reputation. Strava did it for fitness. MatchMates is building it for community sport — a permanent record that travels with you across apartments, cities, and communities.</p>
+        <span class="blog-read">Read article →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- CATEGORY: Rankings & Formats -->
+  <div class="blog-category">
+    <p class="blog-category-title">Rankings &amp; Tournament Formats</p>
+    <div class="blog-grid">
+
+      <a href="pages/elo-rating.html" class="blog-card">
+        <p class="blog-tag">Reference</p>
+        <p class="blog-title">What is ELO Rating in Community Sports?</p>
+        <p class="blog-excerpt">ELO is the ranking system that updates automatically after every match, accounts for the strength of opposition, and never requires a volunteer to update a spreadsheet. Here's how it works.</p>
+        <span class="blog-read">Read reference →</span>
+      </a>
+
+      <a href="pages/round-robin-vs-knockout.html" class="blog-card">
+        <p class="blog-tag">Reference</p>
+        <p class="blog-title">Round Robin vs Knockout — Which Format for Your Community?</p>
+        <p class="blog-excerpt">The format you choose shapes how your tournament feels. This guide covers every format — round robin, knockout, league, and ladder — and when to use each.</p>
+        <span class="blog-read">Read reference →</span>
+      </a>
+
+      <a href="pages/sports-ladder.html" class="blog-card">
+        <p class="blog-tag">Reference</p>
+        <p class="blog-title">How Sports Ladders Work</p>
+        <p class="blog-excerpt">A sports ladder is the simplest and most engaging ranking system for community racket sports. No fixed schedule. No elimination. Just continuous competition — anytime two players want to settle who's better.</p>
+        <span class="blog-read">Read reference →</span>
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <div>
+    <p class="footer-brand">Match<span>Mates</span></p>
+    <p class="footer-desc">The cricket scoring app for local, weekend, and apartment cricket.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules of Cricket</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://nf2180.github.io/matchmates" target="_blank">Open App</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
