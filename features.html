@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatchMates Features — Complete Cricket Scoring App Feature List</title>
+  <meta name="description" content="Full feature breakdown of MatchMates — live ball-by-ball scoring, AI team balancing, career history, tournament management, ELO rankings, and more. See what's live and what's coming.">
+  <meta name="keywords" content="cricket scoring app features, ball by ball cricket scoring, cricket tournament app, cricket career stats app, AI cricket team balancing, live cricket scorecard, cricket app India">
+  <link rel="canonical" href="https://nf2180.github.io/matchmates-web/features.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB123FQ53Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-YB123FQ53Y");
+  </script>
+  <style>
+    /* Status badges */
+    .badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .badge-live { background: rgba(168,230,61,0.15); color: var(--lime); border: 1px solid rgba(168,230,61,0.3); }
+    .badge-soon { background: rgba(255,180,50,0.12); color: #f5a623; border: 1px solid rgba(245,166,35,0.3); }
+
+    /* Feature dimension sections */
+    .dim-section { padding: 70px 5vw; border-top: 1px solid var(--border); }
+    .dim-section:first-of-type { border-top: none; }
+    .dim-section.alt { background: var(--forest); }
+
+    /* Feature grid */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+
+    .feature-item {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      transition: background 0.15s;
+    }
+
+    .dim-section.alt .feature-item { background: var(--night); }
+    .feature-item:hover { background: rgba(168,230,61,0.04); }
+
+    .feature-item-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+    }
+
+    .feature-item-desc {
+      font-size: 0.8rem;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    /* Summary scorecard at top */
+    .scorecard {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 2.5rem 0;
+    }
+
+    .scorecard-cell {
+      background: var(--card-bg);
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .scorecard-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .scorecard-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    /* Dev prompt box */
+    .dev-prompt {
+      background: var(--night);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--lime);
+      border-radius: 4px;
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+      font-family: 'Inter', monospace;
+      font-size: 0.82rem;
+      color: var(--slate);
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Match<span>Mates</span></a>
+  <ul class="nav-links">
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://nf2180.github.io/matchmates" class="nav-cta" target="_blank">Open App →</a></li>
+  </ul>
+</nav>
+
+<header class="inner-hero">
+  <div class="pitch-grid"></div>
+  <p class="page-eyebrow">Product Features</p>
+  <h1 class="page-title">Every Feature,<br>Evaluated Honestly</h1>
+  <p class="page-intro">A complete breakdown of what MatchMates does today, what's coming next, and how it stacks up against the four dimensions that define a great cricket scoring app — In-Game Scoring, Data & Connectivity, League Management, and Field Usability.</p>
+</header>
+
+<!-- SCORECARD SUMMARY -->
+<section style="padding: 60px 5vw 0;">
+  <div class="scorecard">
+    <div class="scorecard-cell">
+      <p class="scorecard-num" style="color:var(--lime)">14</p>
+      <p class="scorecard-label">Live Features</p>
+    </div>
+    <div class="scorecard-cell">
+      <p class="scorecard-num" style="color:#f5a623">8</p>
+      <p class="scorecard-label">Coming Soon</p>
+    </div>
+    <div class="scorecard-cell">
+      <p class="scorecard-num" style="color:var(--white)">1–2</p>
+      <p class="scorecard-label">Taps Per Ball</p>
+    </div>
+    <div class="scorecard-cell">
+      <p class="scorecard-num" style="color:var(--white)">5</p>
+      <p class="scorecard-label">Clicks to First Ball</p>
+    </div>
+    <div class="scorecard-cell">
+      <p class="scorecard-num" style="color:var(--lime)">∞</p>
+      <p class="scorecard-label">Career History</p>
+    </div>
+    <div class="scorecard-cell">
+      <p class="scorecard-num" style="color:var(--lime)">0</p>
+      <p class="scorecard-label">Downloads to Watch Live</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIMENSION 1: IN-GAME SCORING -->
+<section class="dim-section" id="scoring">
+  <p class="section-eyebrow">Dimension 1</p>
+  <h2 class="section-title">In-Game Scoring &amp;<br>Rule Flexibility</h2>
+  <p class="section-lead">The core engine — whether the app handles the real realities of informal and formal cricket, from 6-over box cricket to 20-over weekend games.</p>
+
+  <div class="feature-grid">
+    <div class="feature-item">
+      <p class="feature-item-title">Custom Match Formats <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Configure any over count — 6, 8, 10, 15, 20, or unlimited. Set custom player counts (8v8, 11v11, or any combination). Works for box cricket, apartment matches, and full-length games without any format restrictions.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Wide &amp; No Ball — 1 Run + Reball <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Standard extras rule enforced automatically. Wide or No Ball adds 1 run to the team total and the delivery does not count as a valid ball — it is automatically added to the over. No manual over-length tracking needed.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Bye &amp; Leg Bye <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Tap Bye or Leg Bye, enter the run count. Credited to the team total, not the batsman's score or the bowler's figures. Treated as a valid delivery — over count advances normally.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Wicket Recording <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">One-tap Wicket button records any dismissal type. Updates bowler figures, advances the batting lineup, and prompts next batsman selection. Wicket is recorded against the bowler's economy and strike rate.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Multi-Step Undo <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Undo any number of previous deliveries — not just the last ball. Reverses runs, extras, and wickets without corrupting match state. Essential for correcting scorer errors on a live boundary line.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Edit Any Previous Ball <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Open any past delivery and correct the recorded outcome — runs, extras, or dismissal type. Match state recalculates automatically from the edited point forward. No need to restart the innings for a single entry error.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Compulsory Retirement Rules <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Auto-trigger retirement at a configurable run threshold (e.g., retire at 30 runs in box cricket). App will alert the scorer when the threshold is reached and prompt the next batsman. Common in apartment and corporate cricket.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Mid-Match Player Substitution <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Replace a player mid-innings without corrupting batting or bowling figures. Substitutes will be tracked separately from original squad members in the scorecard and career stats.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Advanced Dismissal Types <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Specific dismissal logging — Mankad, Retired Out, Retired Hurt, Timed Out, Obstructing the Field. Currently all dismissals are recorded as Wicket. Dismissal type detail and fielder attribution coming in a future build.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIMENSION 2: DATA & CONNECTIVITY -->
+<section class="dim-section alt" id="data">
+  <p class="section-eyebrow">Dimension 2</p>
+  <h2 class="section-title">Data Infrastructure &amp;<br>Connectivity</h2>
+  <p class="section-lead">How the app handles network drops on outdoor grounds, delivers live scores to spectators, and builds long-term player analytics.</p>
+
+  <div class="feature-grid">
+    <div class="feature-item">
+      <p class="feature-item-title">Live Scorecard — No Download to View <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Every match generates a live scorecard URL. Share it on WhatsApp before the first ball. Family, friends, and players waiting to bat can follow ball-by-ball in any browser — no app install required. Zero friction for spectators.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Career Statistics — Auto-Aggregated <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Every match automatically adds to each player's permanent career record: total matches, runs, wickets, batting average, strike rate, bowling economy. Aggregated across all communities — not reset between seasons or groups.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">ELO Skill Ratings — Live Update <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Each player's skill rating updates the moment a match result is entered. Ratings account for opposition strength — beating a higher-rated team earns more points. Community leaderboard refreshes automatically after every match.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Offline Scoring — Sync Later <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Score a complete match 100% offline on a Maidan or ground with no signal. Ball-by-ball data cached locally. Auto-syncs to cloud — career stats, leaderboards, match history — the moment a connection is restored. No data lost.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Advanced Analytics — Wagon Wheel, Manhattan <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Visual match analytics including Wagon Wheel (shot direction), Manhattan chart (runs per over), partnership graphs, run-rate progression, and bowler economy splits by over. Currently basic scorecard only.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Scorecard Export — PDF &amp; WhatsApp Image <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Export completed scorecards as a clean PDF or shareable WhatsApp graphic — team scores, individual batting and bowling figures, match result, player of the match. One tap to share the full match summary to any group.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIMENSION 3: LEAGUE MANAGEMENT -->
+<section class="dim-section" id="league">
+  <p class="section-eyebrow">Dimension 3</p>
+  <h2 class="section-title">League &amp; Community<br>Management</h2>
+  <p class="section-lead">The macro layer — from organising a single match to running a full tournament with brackets, standings, and player administration.</p>
+
+  <div class="feature-grid">
+    <div class="feature-item">
+      <p class="feature-item-title">Player Join via WhatsApp Link <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Share one link — players tap to join the match. No manual entry by phone number. No prerequisite app install to be added to a squad. 22 players added in the time it takes to forward one WhatsApp message.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">AI-Balanced Team Formation <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">MatchMates reads each player's current ELO rating and automatically suggests balanced Team A and Team B. No captain bias, no stacked sides. Captains can swap players manually if needed. Fair teams in seconds.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Player Availability &amp; RSVP <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Create a match, set the date and ground. Players confirm or decline from the WhatsApp invite. Organiser sees confirmed, pending, and declined in one view — no chasing individual messages through a 200-message thread.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Tournament Fixture Generation <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Create a round robin, knockout, or league tournament. MatchMates generates the complete fixture list automatically. No manual bracket drawing. Results entered after each match update standings in real time.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Live Tournament Standings <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Points table updates automatically after every match result is entered. Standings visible to all tournament participants without organiser intervention. No spreadsheet, no manual update required.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Persistent Player Identity Across Communities <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">A player's career record, ELO rating, and match history follow them when they move to a new apartment or join a new cricket group. No starting from zero. The organiser of any new community can see exactly who they're getting.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Net Run Rate Auto-Calculation <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">NRR calculated and displayed automatically in tournament standings. Currently points only. NRR tiebreaker will be added as part of the tournament standings upgrade — essential for multi-team round robin tournaments.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Match Media — Photos &amp; Highlights <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Upload match photos to the scorecard. AI-generated match highlight text and auto-overlay scorecard graphics for social sharing. Coming as part of the post-match experience upgrade.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIMENSION 4: USABILITY -->
+<section class="dim-section alt" id="usability">
+  <p class="section-eyebrow">Dimension 4</p>
+  <h2 class="section-title">Field Usability &amp;<br>Performance</h2>
+  <p class="section-lead">How the app performs in real outdoor conditions — sunlight, heat, low battery, and the speed required to score ball by ball without delaying the game.</p>
+
+  <div class="feature-grid">
+    <div class="feature-item">
+      <p class="feature-item-title">1–2 Taps Per Ball <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">Standard deliveries scored in one tap — select the run count (0–6) on a single screen. Extras require one additional tap (Wide, No Ball, Bye, Leg Bye) then run count. Wicket is one tap. The scorer never leaves the main scoring screen mid-over.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Dark Mode — High Contrast UI <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">MatchMates is built on a dark background with high-contrast green and white elements. The scoring interface — large run buttons, bold score display — is designed for readability in direct sunlight. No separate light/dark toggle needed.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Lightweight — Battery &amp; Thermal Efficient <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">No background video, no heavy animations, no constant polling. MatchMates is a lean web app that does not tax the CPU or drain the battery faster than a typical messaging app. Suitable for a full 3–4 hour match on a single charge.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">5 Clicks to First Ball <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">From opening the app: Create Match → Add Players → Teams & Toss → Innings Setup → Start Scoring. Five screens. Under 5 minutes from app open to live ball entry — the fastest setup of any cricket scoring app for informal cricket.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Works on Any Smartphone Browser <span class="badge badge-live">Live</span></p>
+      <p class="feature-item-desc">The live scorecard requires no app download for spectators — it opens in Chrome, Safari, or any mobile browser. Scorer and organisers use the app. Everyone else follows on a browser link. No barriers to entry for the crowd.</p>
+    </div>
+
+    <div class="feature-item">
+      <p class="feature-item-title">Offline Mode — Score Without Signal <span class="badge badge-soon">Coming Soon</span></p>
+      <p class="feature-item-desc">Full offline scoring capability — cache all ball data locally when signal drops. Auto-sync to cloud once connection is restored. No match data lost on a Maidan with patchy 4G or an indoor ground with no coverage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <p class="section-eyebrow" style="color:rgba(245,242,235,0.6)">Start Scoring</p>
+  <h2 class="section-title">14 Features Live.<br>First Ball in 5 Clicks.</h2>
+  <p class="section-lead">Open MatchMates and score your next match. Free, no setup, works on WhatsApp.</p>
+  <div class="hero-actions" style="justify-content:center">
+    <a href="https://nf2180.github.io/matchmates" class="btn-primary" target="_blank">Open Cricket Scoring App →</a>
+    <a href="pages/vs-cricheroes.html" class="btn-secondary" style="border-color:rgba(245,242,235,0.3);color:var(--white)">vs CricHeroes →</a>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <p class="footer-brand">Match<span>Mates</span></p>
+    <p class="footer-desc">The cricket scoring app for local, weekend, and apartment cricket.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules of Cricket</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://nf2180.github.io/matchmates" target="_blank">Open App</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
