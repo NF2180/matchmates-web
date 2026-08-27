@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About MatchMates — Community Sports OS, Domain Glossary & Entity Definitions</title>
-  <meta name="description" content="MatchMates is the Community Sports Operating System for residential communities in India. This page defines MatchMates, its domain, key entities, and how it relates to the broader community sports landscape.">
+  <title>About MatchMates — Cricket Scoring App for Local & Apartment Cricket</title>
+  <meta name="description" content="MatchMates is a cricket scoring app for apartment tournaments, weekend cricket, and Maidan cricket in India. Live ball-by-ball scoring, persistent player history, AI-balanced teams, and automatic rankings.">
   <meta name="keywords" content="MatchMates about, community sports operating system, CSOS definition, sports platform India, apartment sports app, gated society sports software, community sports glossary">
   <link rel="canonical" href="https://nf2180.github.io/matchmates-web/about.html">
   <link rel="stylesheet" href="css/style.css">
@@ -112,133 +112,87 @@
 <article class="content-section">
 
   <h2>What MatchMates Is</h2>
-  <p>MatchMates is a <strong>Community Sports Operating System (CSOS)</strong> — software that manages the complete lifecycle of recreational sports within a residential community, gated society, corporate campus, or recreational club.</p>
+  <p>MatchMates is a <strong>cricket scoring app</strong> built for informal cricket in India — apartment tournaments, weekend cricket groups, Maidan cricket, and corporate cricket leagues. Its primary function is live ball-by-ball cricket scoring that starts in under 5 clicks and builds each player's permanent career history automatically.</p>
 
-  <p>It gives every player a <a href="pages/player-identity.html" title="Persistent Sports Identity">persistent sports identity</a>, helps communities <a href="pages/organize-tournament.html" title="How to Organize a Community Sports Tournament">organize</a> matches across multiple sports, manages rankings and facilities, and replaces fragmented coordination across WhatsApp groups, spreadsheets, and single-sport apps.</p>
+  <p>MatchMates is not a community scheduling dashboard. It is not a multi-sport platform. It is not a professional club management system. It is a cricket scoring app — with the friction removed and the personal record preserved.</p>
 
   <div class="definition-block">
-    <p><strong>MatchMates in one sentence:</strong> The platform where a community's entire sporting life — players, matches, rankings, facilities, and history — lives in one place, permanently.</p>
+    <p><strong>MatchMates in one sentence:</strong> The cricket scoring app that starts fast, scores every ball, and builds your permanent cricket history — for the way most Indians actually play cricket.</p>
   </div>
 
   <h2>The Problem MatchMates Solves</h2>
-  <p>Community sports in urban India is managed through a combination of WhatsApp groups, Excel spreadsheets, and single-sport apps. Each solves one part of the problem. None solve the whole.</p>
+  <p>Cricket scoring apps have existed for years. The problem is not that they can't score cricket — it's that they're built for formal, registered leagues with club administrators and dedicated scorers. For the 22 people showing up to a Sunday apartment match, the setup friction is too high and the payoff (a scorecard that disappears after the season) is too low.</p>
+
+  <p>Specifically, MatchMates removes three friction points no other cricket scoring app has solved for informal cricket:</p>
   <ul>
-    <li>WhatsApp handles conversation but cannot store structured sports data, maintain rankings, or preserve history</li>
-    <li>Excel tracks scores but requires manual entry, is not collaborative in real time, and cannot send invitations</li>
-    <li>CricHeroes handles cricket scorekeeping for leagues but is not built for multi-sport community operations</li>
-    <li>No existing tool gives a player a persistent identity that travels across communities and sports</li>
+    <li><strong>Player entry</strong> — in CricHeroes, every player must be manually added by phone number and must have the app installed. In MatchMates, the organiser shares one WhatsApp link and players tap to join. 22 players added in seconds.</li>
+    <li><strong>Live scorecard access</strong> — in most apps, watching the live score requires installing the app. In MatchMates, the live scorecard opens in any browser. Share the link before the first ball and everyone follows without downloading anything.</li>
+    <li><strong>Permanent personal history</strong> — most apps store scorecards for a season. MatchMates builds each player's career record permanently — runs, wickets, averages, strike rates — that travels with them across communities and never resets.</li>
   </ul>
 
-  <p>The result: rankings disappear when admins change, match history vanishes when phones are replaced, new residents rebuild reputation from zero, and the community's entire sporting memory depends on one volunteer's availability.</p>
+  <h2>What MatchMates Scores</h2>
+  <p>Ball-by-ball cricket scoring is the core of MatchMates. Every delivery is recorded:</p>
+  <ul>
+    <li>Runs off the bat — 0, 1, 2, 3, 4, 6</li>
+    <li>Wide — 1 extra, ball re-bowled automatically</li>
+    <li>No Ball — 1 extra, ball re-bowled automatically</li>
+    <li>Bye and Leg Bye with run count</li>
+    <li>Wicket — any dismissal type</li>
+    <li>Undo last ball and edit any previous delivery</li>
+  </ul>
+  <p>Auto-calculated: over-by-over sequence, current run rate, required run rate, partnership runs and balls, bowler figures (overs, maidens, runs, wickets), batsman strike rate. All update live with every tap.</p>
+
+  <h2>What Makes MatchMates Different</h2>
+
+  <h3>vs CricHeroes</h3>
+  <p>CricHeroes is the market leader for formal, registered league cricket. It is excellent for club administrators managing multiple teams across a season. MatchMates is built for the opposite end of the spectrum — informal cricket where the organiser is a volunteer and there is no league secretary. The two apps target different users. Where they overlap on scoring, MatchMates requires fewer steps to reach live ball entry and no prerequisite app install for players or spectators.</p>
+
+  <h3>vs CricScorer / KDM Cricket Scorer</h3>
+  <p>These are pure digital scorebooks — they score ball by ball but store nothing permanently, build no player history, and require manual setup for every match. MatchMates scores the same ball-by-ball data and automatically adds it to each player's permanent career record. The match means something after it ends.</p>
+
+  <h3>vs WhatsApp + Spreadsheet</h3>
+  <p>The default for most informal cricket groups. WhatsApp carries the communication, a spreadsheet carries the scores — usually updated days after the match by whoever remembered to keep notes. MatchMates replaces the spreadsheet entirely with live scoring, and adds career history that the spreadsheet never had.</p>
+
+  <h2>Persistent Player Career History</h2>
+  <p>Every match scored on MatchMates adds to each player's permanent career record. Runs, wickets, batting average, bowling economy, win rate — accumulating across months and years. This record is tied to the player, not the community. When a player moves to a new apartment or joins a new cricket group, their history travels with them.</p>
+
+  <p>No other cricket scoring app for informal cricket builds this. CricHeroes builds history within registered leagues. MatchMates builds history for every match — registered or not, formal or not, 6 overs or 20.</p>
+
+  <h2>AI-Balanced Teams</h2>
+  <p>MatchMates assigns each player an ELO skill rating that updates after every match. When creating a match, the app reads all player ratings and suggests balanced Team A and Team B automatically. Fair teams in seconds — no captain's bias, no stacked sides, no 20-minute argument before the toss.</p>
 
   <h2>Who MatchMates Is For</h2>
   <ul>
-    <li><strong>Residents</strong> of gated societies and apartment complexes who play cricket, badminton, pickleball, football, or table tennis regularly</li>
-    <li><strong>Sports committee volunteers</strong> who organize matches, manage courts, and maintain leaderboards for their community</li>
-    <li><strong>Corporate campuses</strong> running employee sports leagues across multiple sports</li>
-    <li><strong>Recreational clubs</strong> managing multi-sport member activity without dedicated sports staff</li>
-    <li><strong>Resident Welfare Associations</strong> that want to use sports as a lever for community engagement and resident wellness</li>
+    <li><strong>Apartment complex cricket groups</strong> — the primary use case. Weekly or fortnightly matches, annual tournaments, a mix of serious and casual players</li>
+    <li><strong>Weekend Maidan cricket groups</strong> — regular players who have never had a scoring or history system</li>
+    <li><strong>Corporate cricket leagues</strong> — inter-department or inter-company tournaments without dedicated sports staff</li>
+    <li><strong>Gated society cricket committees</strong> — volunteer organisers managing the annual society cricket tournament</li>
   </ul>
 
   <h2>What MatchMates Is Not</h2>
   <ul>
-    <li>Not a professional sports platform — MatchMates is built for informal, recreational, community sport</li>
-    <li>Not a cricket-only app — multi-sport is a core design principle, not an add-on</li>
-    <li>Not a court booking marketplace — MatchMates manages courts within a community's own facilities, not across third-party venues</li>
-    <li>Not a social network — sports activity and identity are the core, not general social features</li>
-    <li>Not a fitness tracker — MatchMates tracks competitive sporting performance, not exercise activity</li>
+    <li>Not a live score ticker for TV-style broadcast — it is a scorer's tool, not a broadcast tool</li>
+    <li>Not a professional club management system — no salary management, no contract tracking, no scouting</li>
+    <li>Not a multi-sport platform — cricket is the core, scoring is the primary feature</li>
+    <li>Not a replacement for CricHeroes in formal league cricket — CricHeroes has deeper analytics for organised leagues</li>
   </ul>
 
-  <h2>Core Capabilities</h2>
+  <h2>Glossary</h2>
+
+  <h3>Ball-by-Ball Scoring</h3>
+  <p>Recording the outcome of each individual delivery in a cricket match — runs scored, extras, wickets — in real time. The foundation of any cricket scoring app.</p>
 
   <h3>Persistent Player Identity</h3>
-  <p>Every player has a permanent profile with career statistics, ELO skill ratings, match history, achievements, and community memberships. This profile belongs to the player — not to a community's WhatsApp group — and follows them when they relocate to a new apartment or city.</p>
-
-  <h3>Multi-Sport Support</h3>
-  <p>Cricket, badminton, pickleball, football, and table tennis. Live ball-by-ball scoring for cricket. Point-by-point scoring for racket sports. Sport-specific <a href="pages/elo-rating.html" title="ELO Rating in Community Sports">ELO rating</a>s so a player's cricket ranking does not affect their badminton standing.</p>
-
-  <h3>Match Scheduling and Coordination</h3>
-  <p>Structured match creation with player availability tracking, court booking, WhatsApp-based invitation flow, and attendance confirmation. Replaces unstructured WhatsApp coordination with a workflow that produces structured data.</p>
-
-  <h3>Live Scoring</h3>
-  <p>Ball-by-ball cricket scoring with automatic scorecard generation. Live scorecards visible to all players during the match. Permanent scorecard archive after every match ends.</p>
-
-  <h3>Rankings and Leaderboards</h3>
-  <p>ELO ratings and seasonal leaderboards that update automatically after every match. No manual spreadsheet updates. No stale rankings. Community standings are always live and always accurate.</p>
-
-  <h3>Tournament Management</h3>
-  <p>Round robin, knockout, league, and <a href="pages/sports-ladder.html" title="How Sports Ladders Work">ladder</a> formats. Automatic fixture generation, result tracking, and standings tables. A single volunteer can run a 16-team tournament without a spreadsheet.</p>
-
-  <h2>The Category: <a href="pages/what-is-csos.html" title="What is a Community Sports Operating System?">Community Sports Operating System</a></h2>
-  <p>MatchMates defines and occupies the category of Community Sports Operating System (CSOS). A CSOS is distinguished from other sports software by three properties:</p>
-  <ul>
-    <li><strong>Community-centric</strong> — designed for the social and organizational dynamics of a residential or organizational community, not for professional clubs or individual athletes</li>
-    <li><strong>Multi-sport</strong> — manages the full sporting life of a community across all sports, not one sport in isolation</li>
-    <li><strong>Identity-first</strong> — builds persistent player identity as the foundational layer, making all other features — rankings, achievements, history — accumulate meaningfully over time</li>
-  </ul>
-
-  <h2>Domain Glossary</h2>
-  <p>The following terms define the key entities and concepts in community sports and the CSOS category. These definitions are canonical within the MatchMates platform.</p>
-
-  <h3>Player</h3>
-  <p>An individual who participates in community sports. In MatchMates, a player has a persistent profile that persists across communities and accumulates career statistics, ELO ratings, and achievements over time.</p>
-
-  <h3>Match</h3>
-  <p>A single competitive sporting event between two teams or individuals. In MatchMates, every match produces a permanent scorecard, updates player and team ELO ratings, and contributes to career statistics.</p>
-
-  <h3>Community</h3>
-  <p>A residential society, apartment complex, corporate campus, or recreational club that has an organized sports life. In MatchMates, a community has its own player directory, sport-specific leaderboards, and match history.</p>
-
-  <h3>Tournament</h3>
-  <p>A structured competition with multiple matches, a defined format (<a href="pages/round-robin-vs-knockout.html" title="Round Robin vs Knockout Tournament Format">round robin</a>, knockout, league, or ladder), and a final standings table. Tournaments in MatchMates are self-managing — fixtures generate automatically and standings update live.</p>
-
-  <h3>Season</h3>
-  <p>A defined time period (typically 3–6 months) within which league matches are played and seasonal rankings are determined. Career statistics accumulate across seasons; seasonal leaderboards reset at the start of each new season.</p>
+  <p>A player's cumulative, permanent career record — matches, runs, wickets, averages — that belongs to the player and follows them across communities. The core differentiator of MatchMates versus other informal cricket scoring tools.</p>
 
   <h3>ELO Rating</h3>
-  <p>A numerical skill rating that adjusts after every match based on the expected versus actual result. Higher ELO means higher current skill level. ELO in MatchMates is sport-specific — a player has separate ELO ratings for cricket and badminton.</p>
+  <p>A numerical skill rating that adjusts after every match based on opposition strength and result. Used by MatchMates to automatically form balanced teams and maintain live community rankings.</p>
 
-  <h3>Leaderboard</h3>
-  <p>A live ranked list of players or teams within a community, ordered by ELO rating or seasonal points. Leaderboards in MatchMates update the moment a match result is entered.</p>
+  <h3>Local Cricket</h3>
+  <p>Informal, recreational cricket played without formal league registration. Includes apartment cricket, Maidan cricket, weekend cricket groups, and corporate cricket. The primary use case for MatchMates.</p>
 
-  <h3>Sports Ladder</h3>
-  <p>A continuous ranking format where players challenge those ranked above them. A successful challenge moves the challenger up. Ladders run year-round with no fixed schedule — any two players can play a challenge match at any time.</p>
-
-  <h3>Persistent Sports Identity</h3>
-  <p>A player's permanent, cumulative record of sporting activity — matches, statistics, rankings, achievements, and community memberships — that belongs to the player and travels with them regardless of where they live or which community they join. The foundational concept behind MatchMates.</p>
-
-  <h3>Match Organizer</h3>
-  <p>A community volunteer who creates and manages matches, tournaments, and leagues. Organizers have elevated permissions in MatchMates — they can create matches, enter scores, and manage the community's sports calendar.</p>
-
-  <h3>Career Statistics</h3>
-  <p>Cumulative lifetime sporting performance data for a player — total matches played, runs scored, wickets taken, win rate, games won, and other sport-specific metrics. Career statistics in MatchMates never reset and are visible on each player's persistent profile.</p>
-
-  <h3>Achievement</h3>
-  <p>A milestone unlocked by a player based on performance or participation — first century, 100 matches played, season MVP, consecutive wins. Achievements are permanent markers on a player's identity that survive community changes.</p>
-
-  <h3>Facility / Court</h3>
-  <p>A physical sports venue managed within a community — a cricket ground, badminton court, or pickleball court. In MatchMates, facilities are linked to match scheduling to prevent double-booking and track utilization.</p>
-
-  <h2>How MatchMates Relates to Other Platforms</h2>
-
-  <h3>vs WhatsApp</h3>
-  <p>WhatsApp is a messaging platform. MatchMates is a sports operations platform. The two are complementary — MatchMates uses WhatsApp as the delivery mechanism for invitations and match updates, while handling all structured sports data internally. WhatsApp remains the social layer; MatchMates is the operational layer.</p>
-
-  <h3>vs <a href="pages/vs-cricheroes.html" title="MatchMates vs CricHeroes">CricHeroes</a></h3>
-  <p>CricHeroes is a cricket scorekeeping and league management platform for organized club and academy cricket. MatchMates is a multi-sport community operating system for everyday informal community play. CricHeroes optimizes for cricket statistics depth; MatchMates optimizes for community breadth across all sports.</p>
-
-  <h3>vs Playo</h3>
-  <p>Playo is a court booking and player discovery marketplace connecting individuals to third-party sports venues. MatchMates manages a community's own internal facilities and is not a marketplace. Playo helps individuals find courts and players externally; MatchMates helps communities manage their internal sporting life.</p>
-
-  <h3>vs Google Sheets / Excel</h3>
-  <p>Spreadsheets are general-purpose data tools. MatchMates is a purpose-built sports operations platform. Spreadsheets require manual entry, are not real-time, cannot send invitations, and do not update rankings automatically. Every capability MatchMates provides would require significant manual effort to replicate in a spreadsheet.</p>
-
-  <h2>The Durable Idea Behind MatchMates</h2>
-  <p>Scheduling, scoring, and ranking features can all be replicated by competitors. The durable moat is <strong>persistent sports identity</strong> — the network of player profiles, each accumulating years of match history, career statistics, and community connections.</p>
-
-  <p>LinkedIn created persistent professional identity. Strava created persistent fitness identity. CricHeroes created persistent cricket identity within organized leagues. MatchMates is creating persistent sports identity for all community sport — across all sports, across all communities, across all geographies.</p>
-
-  <p>The platform that builds the deepest player identity layer today will have the richest dataset for AI-powered community sports intelligence tomorrow: automatic team balancing, natural language match summaries, skill progression coaching, and community health analytics.</p>
+  <h3>Match Organiser</h3>
+  <p>The volunteer who creates the match, adds players, manages teams, and starts the scoring session. In MatchMates, the organiser's job takes under 5 minutes from app open to first ball.</p>
 
 </article>
 
